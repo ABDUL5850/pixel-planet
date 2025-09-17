@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel Planet - Tiny Ideas. Big Impact.</title>
+    <link rel="stylesheet" href="pixel_planet.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <div class="bg-grid"></div>
+    <div class="bg-glow"></div>
+
+    <!-- Header -->
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-icon">🌍</span>
+                <span>Pixel Planet</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Welcome to<br>Pixel Planet</h1>
+                <div class="hero-badge">✨ Tiny Ideas. Big Impact.</div>
+                <p class="hero-subtitle">Where creativity meets innovation</p>
+                <p class="hero-description">A creative space for random thoughts, design experiments, and fun little projects that push the boundaries of digital creativity.</p>
+                <div class="cta-buttons">
+                    <a href="#about" class="btn-primary">Explore Now</a>
+                    <a href="#blog" class="btn-secondary">Read Ideas</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">About Us</div>
+                <h2 class="section-title">About Pixel Planet</h2>
+                <p class="section-description">We believe that even the smallest pixel can change the bigger picture</p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content fade-in">
+                    <h3>Our Story</h3>
+                    <p>Pixel Planet started as a fun experiment to collect quirky ideas, digital doodles, and random web experiments. We believe that even the smallest pixel can change the bigger picture.</p>
+                    <p>Our mission is to inspire creativity through small, impactful digital experiences that challenge conventional thinking and spark innovation.</p>
+                </div>
+                
+                <div class="about-stats fade-in">
+                    <div class="stat-item">
+                        <div class="stat-number">100+</div>
+                        <div class="stat-label">Creative Ideas</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Experiments</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">∞</div>
+                        <div class="stat-label">Possibilities</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">Latest Thoughts</div>
+                <h2 class="section-title">Random Ideas</h2>
+                <p class="section-description">Exploring the weird, wonderful, and unexpected corners of digital creativity</p>
+            </div>
+            
+            <div class="blog-grid">
+                <article class="blog-card fade-in">
+                    <h3>The Secret Life of Buttons</h3>
+                    <p>Why clicking a button feels so satisfying. An exploration into the psychology of user interface interactions and the subtle art of digital feedback.</p>
+                    <div class="blog-date">2 days ago</div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <h3>Colors That Don't Exist</h3>
+                    <p>Imaginary colors we wish were real. A deep dive into the perception of color and the boundaries of human visual experience.</p>
+                    <div class="blog-date">1 week ago</div>
+                </article>
+                
+                <article class="blog-card fade-in">
+                    <h3>Tiny Websites</h3>
+                    <p>Why the internet needs more small, weird, and fun sites. A manifesto for creative digital spaces that prioritize personality over performance metrics.</p>
+                    <div class="blog-date">2 weeks ago</div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">Experiments</div>
+                <h2 class="section-title">Pixel Experiments</h2>
+                <p class="section-description">Interactive creations that blur the line between art and functionality</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in" onclick="animateRocket(this)">
+                    <div class="gallery-icon">🚀</div>
+                    <div class="gallery-title">Pixel Rocket</div>
+                </div>
+                
+                <div class="gallery-item fade-in" onclick="generateShape(this)">
+                    <div class="gallery-icon" id="shape">◆</div>
+                    <div class="gallery-title">Shape Generator</div>
+                </div>
+                
+                <div class="gallery-item fade-in" onclick="startAnimation(this)">
+                    <div class="gallery-icon" id="spinner">✨</div>
+                    <div class="gallery-title">CSS Animation</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <div class="section-badge">Let's Connect</div>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-description">Have a weird idea to share? We'd love to hear from you.</p>
+            </div>
+            
+            <div class="contact-container">
+                <form class="contact-form fade-in">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" required placeholder="Share your weird and wonderful ideas..."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>🌍 Pixel Planet</h3>
+                    <p>A creative space for random thoughts, design experiments, and fun little projects that push the boundaries of digital creativity.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link" title="Instagram">📸</a>
+                        <a href="#" class="social-link" title="GitHub">🐙</a>
+                        <a href="#" class="social-link" title="Twitter">🐦</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#">Privacy</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">Design</a></li>
+                        <li><a href="#">Development</a></li>
+                        <li><a href="#">Experiments</a></li>
+                        <li><a href="#">Ideas</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 Pixel Planet | Made By ABDUL</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="pixel_planet.js"></script>
+</body>
+</html>
